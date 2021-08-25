@@ -15,7 +15,7 @@ function Featured() {
         </div>
       </div>
       <div className="featured_image_container">
-        <img src={image1} alt="featured" />
+        <img src="https://cdn.vox-cdn.com/thumbor/4jRoEfFCanIATpg2-KXs8RK7dG0=/0x0:1200x800/920x613/filters:focal(468x114:660x306):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69135616/Classico_marathon_getty_ringer.0.jpeg" alt="featured" />
       </div>
     </div>
   );
