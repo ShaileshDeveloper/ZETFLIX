@@ -1,0 +1,29 @@
+.movielist_items_container{
+    display: flex;
+    width:max-content;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition:all 1s ease;
+}
+
+.movielist_items{
+    position: relative;
+}
+
+.movielist_left_arrow{
+    position: absolute;
+    top: 35px;
+    z-index: 1;
+}
+.movielist_right_arrow{
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
+
+.movielist span {
+    padding-left: 2rem;
+    font-size:20px;
+    font-weight: 500;
+}

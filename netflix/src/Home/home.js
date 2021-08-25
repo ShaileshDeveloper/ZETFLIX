@@ -11,6 +11,9 @@ function Home() {
           <Navbar />
           <Featured />
           <Movielist />
+          <Movielist />
+          <Movielist />
+          <Movielist />
         </div>
     )
 }

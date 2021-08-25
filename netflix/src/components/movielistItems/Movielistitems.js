@@ -1,10 +1,10 @@
 import React from 'react'
-
+import "./movielistitem.css"
 
 function Movielistitems() {
     return (
         <div className="movielistitem">
-            item
+            items
         </div>
     )
 }
