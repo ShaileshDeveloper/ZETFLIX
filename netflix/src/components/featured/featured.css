@@ -1,0 +1,42 @@
+
+.featured{
+    display: flex;
+    flex-basis:50%;
+}
+.featured_image_container{
+    flex-basis:60%;
+}
+.featured_info_container{
+    flex-basis:40%;
+    align-self: center;
+    padding: 80px;
+    
+}
+
+.featured_info_container span{
+    font-size: larger;
+    font-style: robust;
+}
+
+
+.featured_image_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.featured_info_buttons button{
+   padding:10px 20px;
+   margin: .5rem;
+   border-style: none;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border-radius:5px;
+}
+
+.featured_info_buttons{
+    display: flex;
+    margin: 5px;
+}
