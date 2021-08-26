@@ -1,0 +1,12 @@
+.video{
+    width: 100vw;
+    height: 95vh;   
+    object-fit: cover;
+}
+.back{
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  color:white;
+  left: 10px;
+}

@@ -3,6 +3,7 @@ import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
+import {NavLink} from 'react-router-dom'
 
 function Navbar() {
   return (
