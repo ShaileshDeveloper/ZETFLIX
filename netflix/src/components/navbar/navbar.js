@@ -17,11 +17,9 @@ function Navbar() {
             />
           </div>
           <div className="nav_options_bar_1">
-            <li>Home</li>
-            <li>series</li>
-            <li>Popular</li>
-            <li>Series</li>
-            <li>Mylist</li>
+           <NavLink to='/' className='link'> <li>Home</li></NavLink>
+           <NavLink to='/series' className='link'><li>Series</li></NavLink>
+           <NavLink to='/mylist' className='link'> <li>Mylist</li></NavLink>
           </div>
         </div>
 
@@ -36,7 +34,7 @@ function Navbar() {
             </li>
             <li>
               <img
-                src="https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                src="https://pbs.twimg.com/profile_images/1425484606355042312/DahgfsJH_400x400.jpg"
                 alt="profile"
               />
             </li>
@@ -44,7 +42,6 @@ function Navbar() {
             <li>
               <ArrowDropDownCircleIcon className="icon"/>
               <div className="ArrowDropDown_options">
-                <span>settings</span>
                 <span>logout</span>
               </div>
             </li>

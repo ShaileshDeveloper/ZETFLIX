@@ -3,15 +3,19 @@ import image1 from "../../images/image1.png";
 import "./featured.css";
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import {Link} from "react-router-dom"
+import {movie} from '../../featuredMovieData'
 
-function Featured() {
+
+function Featured({type}) {
   return (
     <div className="featured">
       <div className="featured_info_container">
+       <div className='title_type'>{type==="series"?"Series":"Movies"}</div>
         <span>This football documentory movie is all about<br/> the world class el-classico finals</span>
         <div className="featured_info_buttons">
-            <button><PlayArrowIcon />Play</button>
-            <button><InfoOutlinedIcon />Info</button>
+           <Link style={{textDecoration:'none'}}to={{ pathname:'/watch', movie}}> <button><PlayArrowIcon /><span>Play</span></button></Link>
+            <button><InfoOutlinedIcon /><span>Info</span></button>
         </div>
       </div>
       <div className="featured_image_container">

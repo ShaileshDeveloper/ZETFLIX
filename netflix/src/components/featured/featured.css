@@ -18,6 +18,10 @@
     font-style: robust;
 }
 
+.title_type{
+    font-size:larger;
+    font-weight: bold;
+}
 
 .featured_image_container img {
   object-fit: cover;
@@ -35,9 +39,26 @@
    align-items: center;
    justify-content: center;
    border-radius:5px;
+   text-decoration-style: none;
+   cursor: pointer;
 }
-
+.featured_info_buttons button:hover{
+    padding:10px 20px;
+    margin: .5rem;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    text-decoration-style: none;
+    cursor: pointer;
+    background-color:black;
+    color:white;
+}
 .featured_info_buttons{
     display: flex;
     margin: 5px;
 }
+
+

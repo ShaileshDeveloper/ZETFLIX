@@ -1,42 +1,45 @@
-
-
-.register{
-   
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),  url('https://cdn.vox-cdn.com/thumbor/4jRoEfFCanIATpg2-KXs8RK7dG0=/0x0:1200x800/920x613/filters:focal(468x114:660x306):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69135616/Classico_marathon_getty_ringer.0.jpeg');
-    width:100vw;
-    height:100vh;
-    opacity: 0.4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.register {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 80%
+    ),
+    url("https://cdn.vox-cdn.com/thumbor/4jRoEfFCanIATpg2-KXs8RK7dG0=/0x0:1200x800/920x613/filters:focal(468x114:660x306):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69135616/Classico_marathon_getty_ringer.0.jpeg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h3{
-    color: white;
+h3 {
+  color: white;
 }
-.email_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
+.email_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.email_input{
-    width: 400px;
-    margin-top:20px;
-    height:30px;
-    border: 3px solid grey;
-    background-color:lightgrey;
-    color:black;
+.email_input {
+  width: 400px;
+  margin-top: 20px;
+  height: 30px;
+  border: 2.8px solid lightgray;
+  background-color: lightgrey;
+  color: black;
 }
-.email_container button{
-    height: 36px;
-    width: 90px;
-    border: none;
-    background: rgb(247,247,247);
-    color: black;
+.email_container button {
+  height: 36px;
+  width: 90px;
+  border: none;
+  background: rgb(247, 247, 247);
+  color: black;
 
-
-background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 4%, rgba(213,37,28,0.8690826672465861) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 247, 247, 1) 0%,
+    rgba(255, 255, 255, 1) 4%,
+    rgba(213, 37, 28, 0.8690826672465861) 100%
+  );
 }

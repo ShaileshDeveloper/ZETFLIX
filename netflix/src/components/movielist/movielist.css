@@ -15,6 +15,7 @@
     position: absolute;
     top: 35px;
     z-index: 1;
+    color: white;
 }
 .movielist_right_arrow{
     position: absolute;
