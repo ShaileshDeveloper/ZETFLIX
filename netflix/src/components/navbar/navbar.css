@@ -13,7 +13,7 @@
   color: white;
   position: fixed;
   width: 97%;
-  z-index: 999;
+  z-index: 1;
   height:100px;
   background: linear-gradient(to top,transparent 0%,rgb(0,0,0,0.3) 50%)
 }

@@ -4,19 +4,12 @@ import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { PlaylistContext } from "../../context/playlistContext/playlistContext";
-import { checkItem } from "../../utils";
 
 function Movielistitems({ item }) {
 
   const [movie, setMovie] = useState({});
-  const [hovered, setHovered] = useState(false);
-  const [liked  , setLiked] = useState(false);
-  console.log(liked ,"value")
-
-  const {list , setList} = useContext(PlaylistContext);
- const l =list.find(item => item._id === movie._id)
- 
+  const [liked, setLiked] = useState(false);
+  
   useEffect(() => {
     const getMovie = async () => {
       try {
@@ -30,8 +23,6 @@ function Movielistitems({ item }) {
     };
     getMovie();
   }, [item]);
-
-  
 
   async function likeMovie() {
     const res = await axios.put(
@@ -49,8 +40,7 @@ function Movielistitems({ item }) {
   return (
     <div
       className="movielistitem"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+
     >
       <img src={movie.img} alt="movie" />
       <div className="listitem_icons_container">

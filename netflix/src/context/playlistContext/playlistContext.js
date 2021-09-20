@@ -1,11 +1,10 @@
-import {createContext, useState} from 'react';
+import { createContext,useState } from "react";
+export const PlayListContext = createContext();
 
-export const PlaylistContext = createContext();
+export function PlayListContextProvider({children}){
 
-export function PlaylistContextProvider({children}){
-    const [list , setList] = useState([])
-    return <PlaylistContext.Provider value={{list ,setList}}>
-    {children}
-     </PlaylistContext.Provider>
+    const [list , setList] = useState([]);
+    return <PlayListContext.Provider value={{list , setList}}>
+     {children}
+    </PlayListContext.Provider>
 }
-

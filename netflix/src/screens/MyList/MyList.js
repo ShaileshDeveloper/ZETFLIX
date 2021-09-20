@@ -4,15 +4,12 @@ import Movielist from '../../components/movielist/movielist'
 import { useEffect } from 'react'
 import axios from "axios"
 import Movielistitems from '../../components/movielistItems/Movielistitems'
-import { PlaylistContext } from '../../context/playlistContext/playlistContext'
+import { PlayListContext } from '../../context/playlistContext/playlistContext'
 import './MyList.css'
 import ListItems from '../../components/listItems/listItems'
 
 function MyList() {
-const {list , setList} = useContext(PlaylistContext)
-const d = list.find(item => item._id)
-console.log(d)
-
+const {list , setList} = useContext(PlayListContext)
 
 useEffect(() =>{
     const fixture = async () => {
@@ -24,14 +21,12 @@ useEffect(() =>{
 },[])
     return (
         <>
-       
         <div className='list'>
         <span style={{fontSize:'30px'}}className='heading'>MY LIST</span>
         <div className='list_container'>
            {list.map(item => <ListItems item={item._id} list={list}/>)} 
            </div>
         </div>
-        
         </>
     )
 }

@@ -26,13 +26,6 @@ function Navbar() {
         <div className="container_right">
           <div className="nav_options_bar_2">
             <li>
-              <SearchIcon />
-            </li>
-            <li>KIDS</li>
-            <li>
-              <NotificationsActiveIcon />
-            </li>
-            <li>
               <img
                 src="https://pbs.twimg.com/profile_images/1425484606355042312/DahgfsJH_400x400.jpg"
                 alt="profile"

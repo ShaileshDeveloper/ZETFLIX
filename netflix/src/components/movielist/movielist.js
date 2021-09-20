@@ -4,8 +4,6 @@ import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@material-ui/icons/ArrowForwardIosOutlined";
 import "./movielist.css";
 
-
-
 function Movielist({lists}) {
   const listRef = useRef();
   const [slideNumber, setSlideNumber] = useState(0);

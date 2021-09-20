@@ -28,8 +28,7 @@ function App() {
       {!user ?<Login /> :<Redirect to='/' />} 
       </Route>
       <Route>
-
-        <Route path='/mylist'><MyList  /></Route>
+       <Route path='/mylist'><MyList  /></Route>
       </Route>
     </div>
   );
