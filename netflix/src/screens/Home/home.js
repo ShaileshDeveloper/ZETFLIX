@@ -14,7 +14,7 @@ function Home({type}) {
   
   useEffect(() =>{
     const getRandomLists = async() => {
-      const {data} = await axios.get(`https://Zetflix-football-app.shaileshweb.repl.co/api/lists/${type && '?type=' + type}`,{})
+      const {data} = await axios.get(`https://Zetflix-football-app.shaileshweb.repl.co/api/lists/${type && '?type=' + type}`)
       setLists(data.body)
     }
     getRandomLists()
